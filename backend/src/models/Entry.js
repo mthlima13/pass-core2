@@ -7,6 +7,7 @@ const entrySchema = new mongoose.Schema({
   encryptedPassword: { type: String, required: true },
   url: { type: String },
   notes: { type: String },
+  favorite: { type: Boolean, default: false },
   categoryId: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
 }, { timestamps: true });
 
