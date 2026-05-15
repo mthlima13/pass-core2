@@ -1,33 +1,110 @@
-:root {
-  /* Colors */
-  --bg-primary: #0a0b1e;
-  --bg-secondary: #14162d;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0c0;
-  --accent-primary: #4f46e5;
-  --accent-secondary: #7c3aed;
+/* ============================
+   TEMA ESCURO (padrão)
+   ============================ */
+:root,
+.theme-dark {
+  /* Fundo */
+  --bg-primary: #0f1117;
+  --bg-secondary: #1a1d27;
+  --bg-tertiary: #20243a;
+
+  /* Texto */
+  --text-primary: #e8eaf0;
+  --text-secondary: #8b8fa8;
+  --text-muted: #5a5e72;
+
+  /* Accent – violeta suave */
+  --accent-primary: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --accent-hover: #4f46e5;
+
+  /* Status */
   --success: #10b981;
   --warning: #f59e0b;
   --danger: #ef4444;
+  --info: #22d3ee;
 
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-blur: blur(12px);
+  --glass-bg-hover: rgba(255, 255, 255, 0.09);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-blur: blur(14px);
 
-  /* Shadows */
-  --shadow-premium: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --shadow-premium: 0 8px 32px rgba(0, 0, 0, 0.55);
+
+  /* Inputs */
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --input-border: rgba(255, 255, 255, 0.12);
+  --input-focus-border: var(--accent-primary);
+  --input-text: var(--text-primary);
+  --input-placeholder: var(--text-muted);
+
+  /* Sidebar */
+  --sidebar-bg: rgba(255, 255, 255, 0.02);
+
+  /* Skeleton */
+  --skeleton-base: rgba(255, 255, 255, 0.06);
+  --skeleton-shine: rgba(255, 255, 255, 0.12);
+
+  /* Fundo do body */
+  --body-bg-start: #1a1c3d;
+  --body-bg-end: #0a0b1e;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ============================
+   TEMA CLARO
+   ============================ */
+.theme-light {
+  /* Fundo */
+  --bg-primary: #f5f6fa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #eef0f7;
 
-body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  /* Texto */
+  --text-primary: #1a1d2e;
+  --text-secondary: #5a5e7a;
+  --text-muted: #9496a8;
+
+  /* Accent */
+  --accent-primary: #5b5bd6;
+  --accent-secondary: #7c3aed;
+  --accent-hover: #4e4ec4;
+
+  /* Status */
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --info: #0891b2;
+
+  /* Glassmorphism → painel sólido claro */
+  --glass-bg: rgba(255, 255, 255, 0.80);
+  --glass-bg-hover: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-blur: blur(14px);
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.10);
+  --shadow-premium: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+  /* Inputs */
+  --input-bg: #ffffff;
+  --input-border: rgba(0, 0, 0, 0.12);
+  --input-focus-border: var(--accent-primary);
+  --input-text: var(--text-primary);
+  --input-placeholder: var(--text-muted);
+
+  /* Sidebar */
+  --sidebar-bg: rgba(255, 255, 255, 0.70);
+
+  /* Skeleton */
+  --skeleton-base: #e5e7ef;
+  --skeleton-shine: #f0f2f8;
+
+  /* Fundo do body */
+  --body-bg-start: #dde1f5;
+  --body-bg-end: #eef0fa;
 }
